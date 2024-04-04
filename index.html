@@ -177,7 +177,7 @@
 <li>祝福送到</li>
 <li>愿你的未来</li>
 <li>充满光芒和希望！</li>
-<li>2024-4-5 --柴鸿宇</li>
+<li>2024-4-4 --柴鸿宇</li>
 <li></li>
 <li></li>
 <li>做了我2个小时≧ ﹏ ≦累死</li>
@@ -187,15 +187,26 @@
 <li>(๑•̀ㅂ•́)و✧--此木不柴</li>
 </ol>
 </div>
-<button id="playButton" onclick="btnPlay()">开始</button>
+<button id="playButton" onclick="btnPlay()" disabled="true">加载中...</button>
 <script type="text/javascript">
+    
+var audio = new Audio('./11.mp3');
+    
+audio.addEventListener('canplaythrough', function() {
+	// 在这里解锁Button
+	const button = document.getElementById('playButton');
+	console.log('音频加载完成，可以执行操作了！');
+	button.textContent = "开始";
+	button.disabled = false;
+});
+
 function btnPlay(){
+	
 	console.log("按钮被点击了"); // 输出调试信息到控制台
-    // 播放音乐
-    var audio = new Audio('./11.mp3');
+	// 播放音乐
     audio.play();
 	
-    var ol = document.getElementById("textList");
+	var ol = document.getElementById("textList");
     var li = document.getElementsByTagName("li");
     var index = 0;
     var interval = 4000; // 每秒向上滚动一次
@@ -217,4 +228,3 @@ function btnPlay(){
 </body>
 
 </html>
-
