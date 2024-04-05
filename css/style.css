@@ -65,7 +65,7 @@ h1, h2, h3, span {
         top: 50px;
         line-height: 200px;
         font-size: 60px;
-        background: -webkit-linear-gradient(90deg, #e9e6ff 0%, white 100%);
+        background: -webkit-linear-gradient(90deg, #2f4f4f 0%, black 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-family: Canger;
