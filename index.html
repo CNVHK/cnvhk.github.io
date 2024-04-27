@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Happy Birthday!</title>
+<title>高考加油！</title>
 
 <link rel="stylesheet" href="./css/style.css">
 <style type="text/css">
@@ -14,11 +14,11 @@
 
     #box {
         position: absolute;
-        height: 50px;
+        height: 70px;
         width: 871px;
         overflow: hidden;
-        left: 120px;
-        top: 700px;
+        left: 70px;
+        top: 550px;
         backface-visibility: hidden;
     }
     ol {
@@ -29,10 +29,10 @@
 
     li {
         font-family: Canger;
-        font-size: 50px;
+        font-size: 80px;
         height: 100px;
         list-style: none;
-        line-height: 20px;
+        line-height: 40px;
         background: -webkit-linear-gradient(45deg, #7b68ee 0%, 2f4f4f 100%);
         -webkit-background-clip: text;
         backface-visibility: hidden;
@@ -48,17 +48,31 @@
 		left: 20%;
 		top: 700px;
 		transform: translateX(-50%);
-		background: -webkit-linear-gradient(90deg, #2f4f4f 0%, black 100%);
-		background-color:dodgerblue;
-	    color:white;
-	    border:0;
-        border-radius: 30px;
+		background: #eb94d0;
+  /* 创建渐变 */
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  /* 给按钮添加圆角 */
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+  color: #fafafa;
+  padding: 19px;
+  text-decoration: none;
 	}
     .image {
         float: left;
         margin-right: 10px;
         border-radius: 200px;
-        -webkit-filter: brightness(120%);
+        border-style:solid;
+        border-color:#ff9a9e;
     }
     .coin {
         position: absolute;
@@ -121,63 +135,48 @@
         <div class="before"></div>
         <div class="after"></div>
     </div>
-    <h1>2024·4·3</h1>
-    <h2>徐子轩，祝你生日快乐!</h2>
+    <h1>2024·6·7</h1>
+    <h2>金榜题名 高考必胜!</h2>
     <span>🎉</span>
-    <div class="candle">
-        <div id="flame" class="lit"></div>
-    </div>
-
-    <div class="cake"></div>
-    <div class="plate"></div>
 
     <div id="box">
         <ol id="textList">
-            <li class="demo">Happy Birthday!</li>
-            <li>仅给徐子轩</li>
-            <li>在这个特别日子里</li>
-            <li>我想对你说</li>
-            <li>生日快乐(虽然早过了哈哈哈)</li>
-            <li>想不到眨眼就过去2000多天</li>
-            <li>今后也还要继续加油哦(o゜▽゜)o☆</li>
-            <li>新的一岁</li>
-            <li>不必光芒万丈</li>
-            <li>但愿始终温暖有光q(≧▽≦q)</li>
-            <li>愿你不被任何人所妨碍</li>
-            <li>去你想去的地方</li>
-            <li>见你想见的人</li>
-            <li>以后不止生日快乐</li>
-            <li>天天都要快乐(*^▽^*)</li>
-            <li>吸干地球氧气第18年</li>
-            <li>管它几岁 开心万岁</li>
-            <li>再次祝你生日快乐</li>
-            <li>寒来暑往 秋收冬藏</li>
-            <li>未来可期 来日方长</li>
-            <li>2024-4-5 --柴鸿宇</li>
-            <li>做了我3个小时≧ ﹏ ≦累死</li>
-            <li>想不到还是做出来了哈哈哈</li>
-            <li>祝你我高考顺利哦o((>ω< ))o</li>
-            <li>(๑•̀ㅂ•́)و✧--此木不柴</li>
+            <li class="demo">给你的一些话</li>
+            <li>岁不淹兮，十七又一</li>
+<li>顺利度过高中三年的你</li>
+<li>真的很优秀</li>
+<li>愿你在十八岁的人生里</li>
+<li>能从容应对高考</li>
+<li>取得令自己满意的成绩</li>
+<li>来一场说走就走的旅行</li>
+<li>去遇见更美好的自己</li>
+<li>未来的路很长</li>
+<li>不必光芒万丈</li>
+<li>但愿始终温暖有光</li>
+<li>愿6月7、8号得偿所愿</li>
+<li>不虚此行</li>
+<li>不谈儿女情长</li>
+<li>我祝你</li>
+<li>锋芒毕露</li>
+<li>2024-5-1 给某某某</li>
+<li>未来可期 来日方长</li>
+<li>(๑•̀ㅂ•́)و✧ --此木不柴</li>
         </ol>
     </div>
     <button id="playButton" onclick="btnPlay()" disabled="true">加载中...</button>
-    <h3>7iovo/此木不柴</h3>
-    
-    <div class="coin">
-        <img src="./woman.jpg" alt="哈哈" class="image" style="width:20%" />
-        <img src="./man.jpg" alt="哈哈" class="image" style="width:20%" />
-    </div>
+    <h3>To 某某某</h3>
     
 
     <script type="text/javascript">
 
-        var audio = new Audio('./coldcoffe.mp3');
+        var audio = new Audio('./rise.mp3');
         const button = document.getElementById('playButton');
+        var isStopinter = false;
 
         audio.addEventListener('canplaythrough', function () {
             // 在这里解锁Button
             console.log('音频加载完成，可以执行操作了！');
-            button.textContent = "开始";
+            button.textContent = "音乐";
             button.disabled = false;
         });
 
@@ -200,9 +199,10 @@
                 index++;
                 ol.style.top = -index * scrollHeight + "px";
                 ol.classList.add("transition");
-                //if (index = li.length - 1) {
-                //    clearInterval(intervalId);// 等待过渡动画完成后重置位置
-                //}
+if (index == li.length - 1 & isStopinter == false) {
+   clearInterval(intervalId);// 等待过渡动画完成后重置位置
+   isStopinter = true;
+}
             }
         }
     </script>
